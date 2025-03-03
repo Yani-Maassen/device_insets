@@ -1,0 +1,29 @@
+name: device_insets
+description: "A way to get a device's screen corner radii."
+version: 0.0.1
+repository: https://github.com/Yani-Maassen/device_insets
+homepage: https://github.com/Yani-Maassen/device_insets
+
+environment:
+  sdk: ^3.6.1
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.yanim.device_insets
+        pluginClass: DeviceInsetsPlugin
+      ios:
+        package: com.yanim.device_insets
+        pluginClass: DeviceInsetsPlugin
